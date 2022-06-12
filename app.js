@@ -2,6 +2,9 @@
 const jokeEl = document.getElementById("joke");
 const punch = document.getElementById("punch");
 const jokeBtn = document.getElementById("jokeBtn");
+const spinnerDiv = `<br><div class="spinner-border text-danger" role="status">
+<span class="visually-hidden">Loading...</span>
+</div>`;
 
 jokeBtn.addEventListener("click", generateJoke);
 
@@ -29,7 +32,8 @@ async function generateJoke() {
     if (!jokeArr[1]) {
       jokeEl.innerHTML = data.joke;
     } else {
-      jokeEl.innerHTML = jokeArr[0];
+      jokeEl.innerHTML = jokeArr[0] + spinnerDiv;
+
       setTimeout(function () {
         jokeEl.innerHTML = jokeArr[0];
         punch.innerHTML = jokeArr[1];
