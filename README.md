@@ -1,4 +1,4 @@
-# Dad-Jokes for fathers day !
+# Dad-Jokes
 
 Pure JS CSS HTML app
 

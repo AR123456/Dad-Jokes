@@ -1,5 +1,6 @@
 // https://icanhazdadjoke.com/api
 const jokeEl = document.getElementById("joke");
+const punch = document.getElementById("punch");
 const jokeBtn = document.getElementById("jokeBtn");
 
 jokeBtn.addEventListener("click", generateJoke);
@@ -18,19 +19,24 @@ async function generateJoke() {
 
   const data = await res.json();
   let dataRaw = data;
+  const clearHTML = () => {
+    jokeEl.innerHTML = "";
+    punch.innerHTML = "";
+  };
 
   const jokeSplit = () => {
     jokeArr = dataRaw.joke.split("?");
     if (!jokeArr[1]) {
-      console.log(jokeArr[0]);
       jokeEl.innerHTML = data.joke;
     } else {
       jokeEl.innerHTML = jokeArr[0];
-      setInterval(function () {
-        jokeEl.innerHTML = data.joke;
-      }, 3000);
+      setTimeout(function () {
+        jokeEl.innerHTML = jokeArr[0];
+        punch.innerHTML = jokeArr[1];
+      }, 4000);
     }
   };
+  clearHTML();
   jokeSplit();
 
   // jokeEl.innerHTML = data.joke;
