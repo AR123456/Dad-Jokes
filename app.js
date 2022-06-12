@@ -17,6 +17,21 @@ async function generateJoke() {
   const res = await fetch("https://icanhazdadjoke.com", config);
 
   const data = await res.json();
+  let dataRaw = data;
 
-  jokeEl.innerHTML = data.joke;
+  const jokeSplit = () => {
+    jokeArr = dataRaw.joke.split("?");
+    if (!jokeArr[1]) {
+      console.log(jokeArr[0]);
+      jokeEl.innerHTML = data.joke;
+    } else {
+      jokeEl.innerHTML = jokeArr[0];
+      setInterval(function () {
+        jokeEl.innerHTML = data.joke;
+      }, 3000);
+    }
+  };
+  jokeSplit();
+
+  // jokeEl.innerHTML = data.joke;
 }
