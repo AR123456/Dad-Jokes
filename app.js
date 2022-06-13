@@ -32,10 +32,10 @@ async function generateJoke() {
     if (!jokeArr[1]) {
       jokeEl.innerHTML = data.joke;
     } else {
-      jokeEl.innerHTML = jokeArr[0] + spinnerDiv;
+      jokeEl.innerHTML = jokeArr[0] + "?" + spinnerDiv;
 
       setTimeout(function () {
-        jokeEl.innerHTML = jokeArr[0];
+        jokeEl.innerHTML = jokeArr[0] + "?";
         punch.innerHTML = jokeArr[1];
       }, 4000);
     }
