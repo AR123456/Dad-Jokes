@@ -2,7 +2,9 @@
 * {
   font-family: "Poppins", sans-serif;
 }
-
+body {
+  background-image: url("/fathers-day-2022.jpg");
+}
 #punch {
   font-style: italic;
 }
