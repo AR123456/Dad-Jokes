@@ -45,3 +45,7 @@ async function generateJoke() {
 
   // jokeEl.innerHTML = data.joke;
 }
+
+// color pallet
+//https://www.colourlovers.com/palette/34448/2_Kool_for_Skool
+// *ef817, 821201f, #727271, #5f605d, #388383
