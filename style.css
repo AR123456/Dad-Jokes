@@ -3,9 +3,14 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-image: url("/fathers-day-2022-b.jpg");
+  background-image: url("/fathers-day-2022reduced.jpg");
   /* https://www.w3schools.com/cssref/pr_background-image.asp */
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #punch {
   font-style: italic;
+}
+.card {
+  background: transparent;
 }
