@@ -3,8 +3,13 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-image: url("/fathers-day-2022reduced.jpg");
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  );
+  background-image: url("/fathers-day-2022-b-red.jpg");
   /* https://www.w3schools.com/cssref/pr_background-image.asp */
+
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -12,5 +17,9 @@ body {
   font-style: italic;
 }
 .card {
-  background: transparent;
+  /* background: transparent; */
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  );
 }
