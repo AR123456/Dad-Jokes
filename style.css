@@ -2,21 +2,21 @@
 * {
   font-family: "Poppins", sans-serif;
 }
-/* body {
-  background-image: url("./asfalt-light.png"),
-    url("/fathers-day-2022-b-red2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 body {
-  background-image: url("./asfalt-light.png"),
-    url("/fathers-day-2022-b-red2.jpg");
+  overflow: hidden;
+  background-image: url("/fathers-day-2022-b-red2.jpg"),
+    linear-gradient(rgba(243, 238, 238, 0.5), rgba(24, 23, 23, 0.5));
+
   background-repeat: no-repeat;
   background-size: cover;
-}
 
+  background-position-y: 20vh;
+}
 .card {
-  background: transparent;
+  background: linear-gradient(
+    rgba(227, 222, 222, 0.912),
+    rgba(170, 166, 166, 0.5)
+  );
 }
 #punch {
   font-style: italic;
