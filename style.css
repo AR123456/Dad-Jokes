@@ -2,21 +2,34 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+
 body {
-  overflow: hidden;
-  background-image: url("/fathers-day-2022-b-red2.jpg"),
-    linear-gradient(rgba(243, 238, 238, 0.5), rgba(24, 23, 23, 0.5));
+  background-image: url("./asfalt-light.png"),
+    url("/fathers-day-2022-b-red2.jpg");
 
   background-repeat: no-repeat;
   background-size: cover;
+}
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #a18cd1;
 
-  background-position-y: 20vh;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(29, 236, 197, 0.6),
+    rgba(91, 14, 214, 0.6) 100%
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    45deg,
+    rgba(29, 236, 197, 0.6),
+    rgba(91, 14, 214, 0.6) 100%
+  );
 }
 .card {
-  background: linear-gradient(
-    rgba(227, 222, 222, 0.912),
-    rgba(170, 166, 166, 0.5)
-  );
+  background: transparent;
 }
 #punch {
   font-style: italic;
