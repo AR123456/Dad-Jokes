@@ -1,36 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   font-family: "Poppins", sans-serif;
+  color: #774360;
 }
 
 body {
-  background-image: url("./asfalt-light.png"),
-    url("/fathers-day-2022-b-red2.jpg");
+  background: url("./asfalt-light.png"), url("/fathers-day-2022-b2.jpg");
 
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
-.gradient-custom {
-  /* fallback for old browsers */
-  background: #a18cd1;
 
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(
-    45deg,
-    rgba(29, 236, 197, 0.6),
-    rgba(91, 14, 214, 0.6) 100%
-  );
-
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(
-    45deg,
-    rgba(29, 236, 197, 0.6),
-    rgba(91, 14, 214, 0.6) 100%
-  );
-}
 .card {
   background: transparent;
+  --bs-card-border-color: transparent;
 }
 #punch {
   font-style: italic;
+}
+.orange {
+  background-color: #b25068;
 }
