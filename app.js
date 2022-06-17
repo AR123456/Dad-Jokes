@@ -10,6 +10,7 @@ jokeBtn.addEventListener("click", generateJoke);
 
 generateJoke();
 
+// // USING ASYNC/AWAIT
 async function generateJoke() {
   const config = {
     headers: {
@@ -41,6 +42,8 @@ async function generateJoke() {
   };
   clearHTML();
   jokeSplit();
+
+  // jokeEl.innerHTML = data.joke;
 }
 
 // color pallet

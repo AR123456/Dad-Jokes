@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   font-family: "Poppins", sans-serif;
-  color: #020304;
+  color: #20181c;
 }
 
 body {
@@ -23,5 +23,5 @@ body {
   font-style: italic;
 }
 .orange {
-  background-color: #551e14;
+  background-color: #b25068;
 }
