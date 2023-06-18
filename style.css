@@ -22,7 +22,7 @@ body {
 
 .hero::before {
   content: "";
-  background: url("./asfalt-light.png"), url("/fathers-day-2022-c.jpg");
+  background: url("./asfalt-light.png"), url("./fathers-day-2022-c.jpg");
   background-size: cover;
   position: absolute;
   top: 0px;
