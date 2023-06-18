@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   font-family: "Poppins", sans-serif;
-  color: #020304;
-  font-weight: 900;
+  color: #20181c;
 }
 
 body {
-  background: url("./asfalt-light.png"), url("./fathers-day-2022reduced4.jpg");
+  background: url("./asfalt-light.png"), url("/fathers-day-2022reduced4.jpg");
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,5 +23,5 @@ body {
   font-style: italic;
 }
 .orange {
-  background-color: #551e14;
+  background-color: #b25068;
 }
