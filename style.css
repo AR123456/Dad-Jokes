@@ -1,30 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   font-family: "Poppins", sans-serif;
-  color: #20181c;
+  color: #020304;
   font-weight: 900;
 }
 
-.hero {
-  position: relative;
+body {
+  background: url("./asfalt-light.png"), url("./fathers-day-2022reduced4.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.hero::before {
-  content: "";
-  background: url("./asfalt-light.png"), url("./fathers-day-2022-c.jpg");
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.45;
-}
 .card {
   background: transparent;
   --bs-card-border-color: transparent;

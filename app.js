@@ -10,7 +10,6 @@ jokeBtn.addEventListener("click", generateJoke);
 
 generateJoke();
 
-// // USING ASYNC/AWAIT
 async function generateJoke() {
   const config = {
     headers: {
@@ -37,13 +36,11 @@ async function generateJoke() {
       setTimeout(function () {
         jokeEl.innerHTML = jokeArr[0] + "?";
         punch.innerHTML = jokeArr[1];
-      }, 5000);
+      }, 4000);
     }
   };
   clearHTML();
   jokeSplit();
-
-  // jokeEl.innerHTML = data.joke;
 }
 
 // color pallet
