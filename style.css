@@ -2,10 +2,11 @@
 * {
   font-family: "Poppins", sans-serif;
   color: #20181c;
+  font-weight: 900;
 }
 
 body {
-  background: url("./asfalt-light.png"), url("/fathers-day-2022reduced4.jpg");
+  background: url("./asfalt-light.png"), url("/fathers-day-2022-c.jpg");
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,5 +24,5 @@ body {
   font-style: italic;
 }
 .orange {
-  background-color: #b25068;
+  background-color: #551e14;
 }
